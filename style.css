@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+	
+}
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	background-image:url(./soft.jpeg);
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100vh;
+	background-size: cover;
+	font-family: sans-serif;
+	background-attachment: fixed;
+	
+}
+.container{
+	width: 500px;
+	height: 300px;
+	margin: 200px auto;
+}
+/*glass effect*/
+.glass{
+	background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+	backdrop-filter: blur(23px);
+	-webkit-backdrop-filter: blur(23px);
+	border-radius: 20px;
+	border: 2px solid rgba(255,255,255,0.18);
+	box-sizing: 0 2px 32px 0 rgba(0,0,0,0.37);
+	border-color: #fffdfe;
+	box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+div{
+	text-align: center;
+
+}
+
+.alert h1{
+	margin-top: 450px;
+	margin-left: -1350px;
+
+}
+.abut{
+	margin-left: -1350px;
+	padding: 3px 90px;
+	padding-left: 18px;
+	
+	color: #000000;
+	text-align: center;
+	letter-spacing: 2px;
+	text-decoration: none;
+	font-size: 20px;
+	overflow: hidden;
+	transition: 0.2s;
+}
+
+div h2{
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-size: 2em;
+	text-align: center;
+	text-shadow: #000,#000;
+	color: rgba(32, 0, 32, 0.986);
+
+	
+}
+
+div hr{
+	margin: 14px 0;
+}
+div input[type=number]{
+	margin: 8px 0;
+	padding: 8px;
+	width: 100%;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius:10px ;
+}
+div input[type=number]:read-only{
+	border: 1px solid #7e6f6fa6;
+	background-color: #87abc073;
+	color: #097909;
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	border-radius: 7px;
+}
+div button{
+	margin: 0 4px;
+	padding: 7px 3px;
+	width: 62px;
+	border: 1px solid #e00283;
+	background-color: #df749d;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 10px;
+
+}
+div button:hover{
+	/*background-color: #ccc;*/
+	color: #010500;
+	background: #9acae6;
+	box-shadow: 0 0 10PX #2196f3, 0 0 40PX, #2196f3, 0 0 80PX #2196f3;
+	transition-delay: 1S;
+}
+div button:focus{
+	outline: 2px solid #333;
+}

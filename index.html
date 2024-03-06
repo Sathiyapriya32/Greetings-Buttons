@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" type="png" href="">
+	<title>Simple Arithmetic Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">	
+</head>
+<body>
+	<div class="container glass">
+	<section class="calc">
+	<div>
+		<h2 data-text="Simple Arithmetic Calculator" class="ani"><b>Simple Arithmetic <br>Calculator</b></h2>
+		<input type="number" placeholder="Number 1" id="num1"/>
+		<br>
+		<input type="number" placeholder="Number 2" id="num2"/>
+		<br>
+		<button onclick="addNumbers()">ADD</button>
+		<input type="number" id="result" readonly/>
+	</div>
+	<script type="text/javascript">
+		function addNumbers(){
+			var n1 = parseInt(document.getElementById("num1").value);
+			var n2 = parseInt(document.getElementById("num2").value);
+			document.getElementById("result").value = n1+ n2;
+		}
+	</script>
+	</section>
+	</div>
+	<section class="alerting">
+	<div class="alert">
+		<h1>Click Here To Get Greetings!!</h1>
+		<br>
+		<button onclick="callAlert('Hey,I am Sathiya :)Thanks for visiting!!')"  class="abut">ClickMe</button>
+		<script src="main.js"></script>
+		<script>
+			function callAlert(msg){
+				alert(msg, 3000)
+			}
+		</script>
+		</div>
+	</section>
+</body>
+</html>
